@@ -1,0 +1,85 @@
+
+.modal-content {
+    position: fixed;
+    inset: 0;
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content.enhanced-modal {
+    background: #fff;
+    border-radius: .75rem;
+    box-shadow: 0 1rem 3rem #0003;
+    max-width: 70%;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: none;
+    position: relative;
+    font-family: Inter, sans-serif;
+}
+
+.modal-content.enhanced-modal .modal-header {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-bottom: 1px solid #dee2e6;
+    border-radius: .75rem .75rem 0 0;
+    padding: 2.60rem;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-icon {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+.modal-content.enhanced-modal .modal-title{
+    color: #15a362;
+    font-size: 1.1em !important;
+    line-height: 1.4 !important;
+    font-weight: 600 !important;
+    font-family: Inter,sans-serif
+}
+
+.modal-content.enhanced-modal .modal-body {
+    padding: 2rem;
+    background: #fff;
+}
+
+.inventory-history-modal .table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.table thead th {
+    background: #f8f9fa;
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: .5px;
+    padding: .75rem 1rem;
+    font-family: Inter, sans-serif;
+}
+
+.table tbody td {
+    padding: .75rem 1rem;
+    vertical-align: middle;
+    border-top: none;
+    color: #495057;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    font-size: .875rem;
+}
+
+.modal-content.enhanced-modal .modal-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dee2e6;
+    padding: .875rem 1.25rem;
+    border-radius: 0 0 .75rem .75rem;
+    width: 100%;
+}

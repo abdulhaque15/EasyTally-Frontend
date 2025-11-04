@@ -1,0 +1,46 @@
+.login-background {
+  background-image: url('../src/assets/bglogin.png');
+  background-size: cover;
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-image{
+    max-height: 510px;
+}
+.login-box{
+   border-radius: 10px;
+   min-height: 50vh;
+     box-shadow: #ACBEC2;
+
+}
+.left-side{
+  background-color: #CEBDA3;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.right-panel{
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.logingheading{
+  font-family: 'Lato';
+font-weight: 230;
+font-style: italic;
+font-size: 38px;
+}
+.rounded-border{
+  border-radius: 20px !important;
+}
+
+.custom-btn-secondary-login {
+  background-color: rgb(212 179 124) !important;
+  color: black;
+}
+.custom-btn-secondary-login:hover {
+  background-color: rgb(212 179 124) !important;
+  color: black;
+}

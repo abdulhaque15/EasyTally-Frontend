@@ -1,0 +1,242 @@
+.settings-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.settings-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.settings-header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.header-content-setting{
+    background: none !important;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+
+.settings-header .header-text {
+  flex: 1;
+  text-align: left;
+}
+
+.settings-header .header-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.settings-header h2 {
+  color: #333;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.settings-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+}
+
+.settings-content {
+  margin-bottom: 30px;
+}
+
+.settings-section {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.section-title {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  margin: 0;
+  border-bottom: 1px solid #dee2e6;
+  color: #495057;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Special layout for order settings section */
+.settings-section.orders .settings-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 25px;
+}
+
+.settings-section.orders .setting-item:first-child {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.settings-section.orders .setting-item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.settings-section.orders .setting-item:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.setting-item {
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.setting-item:hover {
+  background: #f8f9fa;
+  border-color: #ced4da;
+}
+
+.setting-item .form-group {
+  margin-bottom: 10px;
+}
+
+.setting-item label {
+  font-weight: 600;
+  color: #495057;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.setting-item .form-control,
+.setting-item .form-select {
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.setting-item .form-control:focus,
+.setting-item .form-select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.setting-item .form-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.setting-item .form-check-input {
+  margin: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.setting-item .form-check-label {
+  margin: 0;
+  font-weight: 600;
+  color: #495057;
+}
+
+.setting-item .form-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading state */
+.settings-container .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Success/Error states */
+.setting-item.has-error .form-control {
+  border-color: #dc3545;
+}
+
+.setting-item.has-error .form-text {
+  color: #dc3545;
+}
+
+.setting-item.is-changed {
+  border-color: #28a745;
+  background: #f8fff9;
+}
+
+.setting-item.is-changed .form-control {
+  border-color: #28a745;
+}
+
+/* Order Types Checkboxes */
+.order-types-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+}
+
+.order-types-checkboxes .form-check {
+  margin-bottom: 0;
+  padding: 6px 8px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #dee2e6;
+  transition: all 0.2s ease;
+  font-size: 13px;
+}
+
+.order-types-checkboxes .form-check:hover {
+  border-color: #15a362;
+  background: #f0f9f4;
+}
+
+.order-types-checkboxes .form-check-input:checked + .form-check-label {
+  color: #15a362;
+  font-weight: 600;
+}
+
+.order-types-checkboxes .form-check-input:checked {
+  background-color: #15a362;
+  border-color: #15a362;
+}
+
+.order-types-checkboxes .form-check-input:focus {
+  box-shadow: 0 0 0 0.2rem rgba(21, 163, 98, 0.25);
+}

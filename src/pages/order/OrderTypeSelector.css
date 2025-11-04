@@ -1,0 +1,138 @@
+.order-type-selector-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem 0;
+}
+
+.order-type-selector-container .card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.order-type-selector-container .card-header {
+  background: linear-gradient(135deg, #15a362 0%, #0d8a4f 100%) !important;
+  border-bottom: none;
+}
+
+.order-type-selector-container .card-header h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.order-type-card {
+  position: relative;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-type-card:hover {
+  border-color: #15a362;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(21, 163, 98, 0.2);
+}
+
+.order-type-card.selected {
+  border-color: #15a362;
+  background: linear-gradient(135deg, #f0f9f4 0%, #e8f5e8 100%);
+  box-shadow: 0 5px 15px rgba(21, 163, 98, 0.3);
+}
+
+.order-type-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+  color: white;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.order-type-icon.sales {
+  background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%);
+}
+.order-type-icon.purchase {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+}
+.order-type-icon.payment {
+  background: linear-gradient(135deg, #6f42c1 0%, #5a2d91 100%);
+}
+.order-type-icon.receipt {
+  background: linear-gradient(135deg, #fd7e14 0%, #e55a00 100%);
+}
+
+.order-type-card.selected .order-type-label {
+  color: #15a362;
+  font-weight: 700;
+}
+
+.selected-indicator {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  background: #15a362;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.order-type-selector-container .btn {
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.order-type-selector-container .btn-primary {
+  background: linear-gradient(135deg, #15a362 0%, #0d8a4f 100%);
+  border: none;
+}
+
+.order-type-selector-container .btn-primary:hover {
+  background: linear-gradient(135deg, #0d8a4f 0%, #0a6b3f 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 5px 15px rgba(21, 163, 98, 0.3);
+}
+
+.order-type-selector-container .btn-primary:disabled {
+  background: #6c757d;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.order-type-selector-container .btn-outline-secondary {
+  border-color: #6c757d;
+  color: #6c757d;
+}
+
+.order-type-selector-container .btn-outline-secondary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: white;
+}
+
+.order-type-selector-container .card-footer {
+  border-top: 1px solid #e9ecef;
+  background: #f8f9fa;
+}
