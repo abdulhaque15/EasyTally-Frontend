@@ -12,6 +12,7 @@ const signupUser = async (data) => {
 const loginUser = async (data) => {
   try {
     const response = await api.post('/auth/login', data);
+    console.log('response ->', response);
     return response.data;
   } catch (error) {
     throw error;

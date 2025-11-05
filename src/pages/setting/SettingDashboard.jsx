@@ -3,6 +3,8 @@ import { FaCog, FaSave, FaUndo, FaInfoCircle } from 'react-icons/fa';
 import Modal from '../../components/Modal';
 import useModal from '../../components/useModal';
 import uvCapitalApi from '../../api/uvCapitalApi';
+import { loginUser } from '../../api/authApi';
+import api from '../../config/axios-config';
 import './Setting.css';
 
 const Settings = () => {
@@ -123,6 +125,9 @@ const Settings = () => {
         console.log('settingsToUpdate ->', settingsToUpdate);
 
         const response = await uvCapitalApi.updateSettingRecord(12, {settingsToUpdate});
+        //const userResponse = await api.post('/auth/login', data);
+        //console.log('userResponse =>', userResponse);
+        
         
         console.log('response =>', response);
         if (response) {
